@@ -11,6 +11,6 @@ public class WrapperB extends Wrapper{
 
     @Override
     public void methodB() {
-        System.out.println("");
+        System.out.println("this is methodB");
     }
 }
