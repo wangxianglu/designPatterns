@@ -13,4 +13,20 @@ package bridge;
  **/
 public class BridgeTest {
 
+    public static void main(String[] args) {
+
+        Bridge bridge = new MyBridge();
+
+        //调用第一个对象
+        Sourceable sourceableA = new SourceableSubA();
+        bridge.setSourceable(sourceableA);
+        bridge.method();
+
+        //调用第二个对象
+        Sourceable sourceableB = new SourceableSubB();
+        bridge.setSourceable(sourceableB);
+        bridge.method();
+
+    }
+
 }
