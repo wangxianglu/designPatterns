@@ -8,4 +8,15 @@ package composite;
  * @Version 1.0
  **/
 public class CompositeTest {
+
+    public static void main(String[] args) {
+        Tree tree = new Tree();
+        TreeNode nodeB = new TreeNode();
+        TreeNode nodeC = new TreeNode();
+
+        nodeB.add(nodeC);
+        tree.root.add(nodeB);
+        System.out.println("build the tree finished!");
+
+    }
 }
